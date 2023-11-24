@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+</head>
+<body>
+
+    <form id="signupForm">
+        <label for="userId">ID:</label>
+        <input type="text" id="userId" name="userId" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label for="department">학과:</label>
+        <input type="text" id="department" name="department" required>
+        <br>
+
+        <label for="studentId">학번:</label>
+        <input type="text" id="studentId" name="studentId" required>
+        <br>
+
+        <label for="hobby">취미:</label>
+        <input type="text" id="hobby" name="hobby" required>
+        <br>
+
+        <label for="mbti">MBTI:</label>
+        <input type="text" id="mbti" name="mbti" required>
+        <br>
+        
+        <button type="button" onclick="submitForm()">회원가입</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            var userId = document.getElementById("userId").value;
+            var password = document.getElementById("password").value;
+            var department = document.getElementById("department").value;
+            var studentId = document.getElementById("studentId").value;
+            var hobby = document.getElementById("hobby").value;
+            var mbti = document.getElementById("mbti").value;
+
+            // 여기서 서버로 다양한 정보를 전송하는 코드를 추가하면 돼.
+            // 아래는 Fetch API를 사용한 예시:
+            fetch('/your-server-signup-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    userId: userId,
+                    password: password,
+                    department: department,
+                    studentId: studentId,
+                    hobby: hobby,
+                    mbti: mbti
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 서버에서의 응답에 따라 처리할 내용을 추가해줘.
+                console.log(data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* styles.css */
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* 
+real banner
+*/
+header {
+  background-color:#373D49;
+}
+
+a{
+  text-decoration: none;
+}
+
+#grid ul{
+  font-size:20px;
+  font-weight:200;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid black;
+  width:100%;
+  padding:20px;
+  list-style: none;
+}
+
+#grid ul li {
+  display:inline-block;
+  padding: 5px 15px;
+  border-radius: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:auto;
+  padding-right:auto;
+  text-align:center;
+}
+
+#grid ul li a{
+  color:#fff;
+}
+
+#grid ul li:hover {
+  padding-left:auto;
+  padding-right:auto;
+  text-align:center;
+  background-color:yellowgreen;
+}
+
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding:20px
+}
+
+/* timetable style */
+html, body {
+  margin: 0;
+  font-family: 'Karla';
+  color: #546E7A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.timetable {
+  flex:7;
+  width: 100%;
+  height: 800px;
+  margin: 2px;
+  border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+  border: 2px solid #ddd;
+  padding: 16px;
+  text-align: center;
+}
+
+.timetable th {
+  background-color: #f2f2f2;
+}
+
+.timetable td {
+  height: 15px; /* 시간대 간격에 맞게 조절 */
+}
+
+
+.subframe {
+  flex:3;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.subframe .intro,
+.subframe .profile {
+  margin-bottom: 20px;
+}
+
+.subframe h2 {
+  color: #333;
+}
+
+.subframe img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.subframe textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+

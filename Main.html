@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <link rel="stylesheet" href="/css/Main.css" >
+</head>
+<body>
+        <header>
+            <nav>
+                <div id="grid">
+                    <ul>
+                        <li><a href="Main.html">back</a></li>
+                        <li><a href="board.html">게시판</a></li>
+                        <li><a href="pri_mento.html">채팅</a></li>
+                        <li><a href="Login.html">로그인/회원가입</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="timetable-container">
+                <table id="timetable" class="timetable">
+                   
+                </table>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal()">&times;</span>
+                    <label for="lecture">강의 내용:</label>
+                    <input type="text" id="lecture" name="lecture" required>
+                    <label for="day">요일:</label>
+                    <select id="day" name="day" required>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                    <label for="start-time">시작 시간:</label>
+                    <input type="time" id="start-time" name="start-time" step="1800" required>
+                    <label for="end-time">종료 시간:</label>
+                    <input type="time" id="end-time" name="end-time" step="1800" required>
+                    <label for="color">색상:</label>
+                    <input type="color" id="color" name="color" value="#ff0000" required>
+                    <button id="add-lecture-btn">추가</button>
+                </div>
+            </div>
+
+            <div class="subframe">
+                <div class="intro">
+                    <h2>웹사이트 소개</h2>
+                    <br>
+                    <p>공강시간 친구를 찾아주는 웹사이트에 대한 설명을 여기에 적어주세요.</p>
+                </div>
+                <br><br><br>
+                <div class="profile">
+                    <h2>프로필</h2>
+                    <img src="/css/image/ProfileImage.webp" alt="프로필 사진" style="border-radius:100%;">
+                    <textarea placeholder="자기소개를 입력하세요"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/Main.js"></script>
+</body>
+</html>

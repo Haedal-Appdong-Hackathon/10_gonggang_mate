@@ -1,0 +1,166 @@
+/* styles.css */
+*{
+    margin:0;
+    padding:0;
+  }
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+/* 
+real banner
+*/
+header {
+    background-color:#373D49;
+}
+
+a{
+    text-decoration: none;
+}
+
+#grid ul{
+    font-size:20px;
+    font-weight:200;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid black;
+    width:100%;
+    padding:20px;
+    list-style: none;
+}
+
+#grid ul li {
+    display:inline-block;
+    padding: 5px 15px;
+    border-radius: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:auto;
+    padding-right:auto;
+    text-align:center;
+}
+
+#grid ul li a{
+    color:#fff;
+}
+
+#grid ul li:hover {
+    padding-left:auto;
+    padding-right:auto;
+    text-align:center;
+    background-color:yellowgreen;
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    padding:20px
+  }
+ 
+  .timetable-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.timetable {
+    width: 80%;
+    height: 700px;
+    border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: #f2f2f2;
+}
+
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ 
+  
+  
+ 
+  
+  
+.subframe {
+    flex:3;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.subframe .intro,
+.subframe .profile {
+    margin-bottom: 20px;
+}
+
+.subframe h2 {
+    color: #333;
+}
+
+.subframe img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.subframe textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ 
+ 
+  
+  

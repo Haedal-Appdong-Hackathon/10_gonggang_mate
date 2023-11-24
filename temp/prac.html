@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="prac.css">
+</head>
+<body>
+    <div class="timetable-container">
+        <table id="timetable" class="timetable">
+           
+        </table>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <label for="lecture">강의 내용:</label>
+            <input type="text" id="lecture" name="lecture" required>
+            <label for="day">요일:</label>
+            <select id="day" name="day" required>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+            </select>
+            <label for="start-time">시작 시간:</label>
+            <input type="time" id="start-time" name="start-time" step="1800" required>
+            <label for="end-time">종료 시간:</label>
+            <input type="time" id="end-time" name="end-time" step="1800" required>
+            <label for="color">색상:</label>
+            <input type="color" id="color" name="color" value="#ff0000" required>
+            <button id="add-lecture-btn">추가</button>
+        </div>
+    </div>
+
+    <script src="prac.js"></script>
+</body>
+</html>

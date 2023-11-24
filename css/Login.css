@@ -1,0 +1,209 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:500;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+
+}
+
+header {
+    background-color:#373D49;
+}
+
+
+#grid ul{
+    font-size:20px;
+    font-weight:200;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid black;
+    width:100%;
+    padding:20px;
+    list-style: none;
+}
+
+#grid ul li {
+    display:inline-block;
+    padding: 5px 15px;
+    border-radius: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:auto;
+    padding-right:auto;
+    text-align:center;
+}
+
+#grid ul li a{
+    color:#fff;
+}
+
+#grid ul li:hover {
+    padding-left:auto;
+    padding-right:auto;
+    text-align:center;
+    background-color:yellowgreen;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width:1440px;
+    margin: 0 auto;
+    height: 1024px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.back-button,
+.logo {
+    height: 42.89px;
+    position: absolute;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #575d69;
+}
+
+.back-button {
+    width: 81.48px;
+    left: 14px;
+    top: 8px;
+}
+
+.logo {
+    width: 244px;
+    left: 1182px;
+    top: 4px;
+    background: #9da8cc;
+}
+
+.main-content {
+    width: 709px;
+    height: 725px;
+    position: absolute;
+    left: 20px;
+    top: 247px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 3px 0px 0 rgba(0, 0, 0, 0.05);
+}
+
+.welcome-section {
+    width: 528px;
+    height: 91px;
+    position: absolute;
+    left: 91px;
+    top: 63px;
+    font-size: 60.7px;
+    font-weight: 700;
+    text-align: left;
+    color: #444;
+}
+
+.input-section {
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    left: 91px;
+    top: 182px;
+    border-radius: 6px;
+}
+
+/* 아이디 비밀번호 칸 */
+
+.input-box input{ 
+    width: 100%;
+    height: 100px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    border:none;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size:24px;
+    font-weight: 700;
+}
+
+.button-box button{
+    width: 400px;
+    height: 100px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    border:none;
+    border-radius: 6px;
+
+    background: #0090c5;
+    color:white;
+    font-size: 39px;
+    font-weight: 700;
+}
+
+.signup-section {
+    width: 526px;
+    height: 725px;
+    position: absolute;
+    left: 818px;
+    top: 247px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 3px 0px 0 rgba(0, 0, 0, 0.05);
+}
+
+.image-box {
+    width: 526px;
+    height: 439px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    opacity: 0.6;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: url('practice.jpg');
+}
+
+.signup-section p {
+    width: 483.44px;
+    height: 83px;
+    position: absolute;
+    left: 78px;
+    top: 72.06px;
+    font-size: 60.7px;
+    font-weight: 700;
+    text-align: left;
+    color: #444;
+}
+
+.signup-button {
+    width: 400.34px;
+    height: 101.38px;
+    position: absolute;
+    left: 60px;
+    top: 507px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.signup-button button {
+    width: 100%;
+    height: 53px;
+    position: absolute;
+    top: 24.19px;
+    font-size: 39px;
+    font-weight: 700;
+    border:none;
+    color: #444;
+}

@@ -1,0 +1,170 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: #fff;
+  overflow: hidden;
+}
+
+header {
+  background-color:#373D49;
+}
+
+a{
+  text-decoration: none;
+}
+
+#grid ul{
+  font-size:20px;
+  font-weight:200;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid black;
+  width:100%;
+  padding:20px;
+  list-style: none;
+}
+
+#grid ul li {
+  display:inline-block;
+  padding: 5px 15px;
+  border-radius: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:auto;
+  padding-right:auto;
+  text-align:center;
+}
+
+#grid ul li a{
+  color:#fff;
+}
+
+#grid ul li:hover {
+  padding-left:auto;
+  padding-right:auto;
+  text-align:center;
+  background-color:yellowgreen;
+}
+
+/* Information input styles */
+
+.infoInputContainer {
+  position: absolute;
+  width: 623px;
+  height: 874px;
+  left: 27px;
+  top: 97px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.inputField {
+  width: 541px;
+  height: 101px;
+  position: relative;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.inputLabel {
+  width: 450px;
+  height: 53px;
+  position: absolute;
+  left: 35.09px;
+  top: 24.19px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #444;
+  opacity: 0.6;
+  border-width:0px;
+}
+
+/* Profile settings styles */
+
+.profileContainer {
+  width: 567px;
+  height: 588px;
+  position: absolute;
+  left: 773px;
+  top: 97px;
+  overflow: hidden;
+  
+}
+
+.profileImage {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  left: 129px;
+  top: 23px;
+  border-radius:50%;
+}
+
+.profileInfo {
+  width: 517px;
+  height: 221px;
+  position: absolute;
+  left: 18px;
+  top: 367px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.infoText {
+  width: 462px;
+  height: 49px;
+  position: absolute;
+  left: 15px;
+  top: 19px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+  opacity: 0.5;
+}
+
+/* Log in button styles */
+
+.loginButton {
+  width: 505px;
+  height: 120px;
+  position: absolute;
+  left: 791px;
+  top: 760px;
+  opacity: 0.7;
+  border-radius: 6px;
+  background: #0090c5;
+}
+
+
+.loginText {
+  top: 30px;
+  left: 120px;
+  right: 20px;
+
+  position:absolute;
+
+  font-size: 39px;
+  font-weight: 700;
+  
+  color: #fff;
+}

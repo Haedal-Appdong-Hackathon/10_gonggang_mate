@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공강메이트</title>
+    <link rel="stylesheet" href="/css/board.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="grid">
+                <ul>
+                    <li><a href="Main.html">back</a></li>
+                    <li><a href="board.html">게시판</a></li>
+                    <li><a href="pri_mento.html">채팅</a></li>
+                    <li><a href="login.html">로그인/회원가입</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="boarding">
+        <div class="board_list_wrap">
+            <table class="board_list">
+                <caption>게시판</caption> <!--테이블 제목-->
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="inboard.html">1교시에 카페 갈 사람 구해요</a></td>
+                        <td>김민환</td>
+                        <td>2023/11/24</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="writing">
+                <button type="button" class="w" onclick="location.href='writing.html'">글쓰기</button>
+            </div>
+            <div class="paging">
+                <a href="#" class="bt">첫 페이지</a>
+                <a href="#" class="bt">이전 페이지</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="bt">다음 페이지</a>
+                <a href="#" class="bt">마지막 페이지</a>
+            </div>
+        </div> 
+    </section>
+</body>
+</html>
